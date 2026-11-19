@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+    color-scheme: light;
+    --paper: #f1eee5;
+    --ink: #20231f;
+    --muted: #75776f;
+    --line: #cfcdc2;
+    --accent: #9a4f32;
+    font-family: "DM Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 28px;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+.lesson-sheet {
+    width: min(100%, 760px);
+    min-height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(30px, 8vw, 88px);
+    border-block: 1px solid var(--ink);
+}
+
+.eyebrow, .console-note {
+    color: var(--accent);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.eyebrow { margin: 0 0 22px; }
+
+h1 {
+    margin: 0;
+    font-family: "Instrument Serif", serif;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    font-weight: 400;
+    letter-spacing: -.04em;
+    line-height: .95;
+}
+
+.description {
+    max-width: 34rem;
+    margin: 20px 0 44px;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.console-note {
+    width: fit-content;
+    margin: 0;
+    padding-top: 13px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-family: "JetBrains Mono", monospace;
+    font-size: .68rem;
+    letter-spacing: .03em;
+    text-transform: none;
+}
+
+body {
+    background: #e5e4e0;
+    color: #1c1c1e;
+    font-family: "DM Sans", sans-serif;
+}
+
+.lesson-sheet {
+    width: min(100%, 900px);
+    min-height: 490px;
+    padding: clamp(30px, 8vw, 88px);
+    border: 1px solid #c9c8c3;
+    border-top: 6px solid #1c1c1e;
+    background: #efeeea;
+}
+
+.eyebrow { color: #ff5500; }
+
+h1 {
+    max-width: 10ch;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(3rem, 9vw, 6rem);
+    font-weight: 600;
+    letter-spacing: -.075em;
+    line-height: .95;
+}
+
+.description { color: #545451; }
+
+.console-note {
+    border-color: #b7b6b0;
+    color: #1c1c1e;
+}
